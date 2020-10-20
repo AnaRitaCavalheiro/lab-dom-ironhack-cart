@@ -18,17 +18,17 @@ function calculateAll() {
   // end of test
 
   // ITERATION 2
+  let totalSum = 0;
   const product = document.getElementsByClassName('product')
   const productArray= [...product]
   productArray.forEach((item) => {
-updateSubtotal(item)
+    totalSum += updateSubtotal(item);
+    
   });
 
-
-
-
   // ITERATION 3
-  //... your code goes here
+let total = document.querySelector('#total-value span');
+total.innerHTML = totalSum;
 }
 
 // ITERATION 4
